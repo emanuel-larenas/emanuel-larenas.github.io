@@ -1,0 +1,181 @@
+
+*{
+    padding : 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;  
+
+}
+body{   
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(IMAGEN\ FONDO.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;   
+    
+}
+a, li {
+    font-family: Arial, Helvetica, sans-serif ;
+    color: white;
+}
+
+.header{
+    background-color: #034748;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5 rem 2 rem;   
+    position: fixed; top: 0%;
+    width: 100%;
+    
+    
+    
+}
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+}
+.nav-menu li {
+    margin-right: 1.5rem;
+
+}
+.nav-menu a:hover{
+    color: #1481BA;
+}
+
+
+.menu-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+.menu-icon, #check{
+    display: none;
+}
+
+
+
+section{
+    color: white;
+    font-style: normal; 
+    font-size: medium;
+    margin: 40px;
+    margin-bottom: 150px;
+    padding-top: 130px;
+    
+}
+
+section h1,h2,h3,h4{
+    color: white;
+    font-style: normal; 
+    font-size: 1.9rem;
+    margin: 35px;
+    text-align: center;
+}
+
+section fieldset {
+    margin: 35px;
+    border: solid 3px;
+    padding: 15px;
+}
+
+
+section legend{
+    font-size: 1.4rem;
+    text-align: center;
+}
+section p{
+    font-size: 1.3rem;
+}
+  
+
+section li{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 13px;
+}
+
+/** FORMULARIO*/
+
+.formulario {
+    background: #034748;
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    box-shadow:0 0 20px 1px rgba(0,0,0,0.3);
+}
+
+.formulario input, label{
+    display: block;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.formulario input{
+    padding: 5px;
+    border: 1px solid rgba(0,0,0,0.3);
+    margin-bottom: 40px;
+}
+
+.formulario label{
+    padding-left: 15px;
+    margin-bottom: 2rem;
+ }
+
+.formulario input :focus{
+    outline: 1px solid rgba(0,0,0,0.7);
+}
+
+.fijar {
+    margin-top: -135px;
+}
+
+.formulario textarea {
+    padding: 5px;
+    width: 100%;
+    height: 200px;
+}
+
+
+/** Responsive*/
+
+@media (max-width : 800px){
+    .checkbtn{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 20px;  
+        right: 20px;
+        cursor: pointer;
+    }
+    .nav-menu ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background: #034748;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+    }
+    .nav-menu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav-menu ul li :last-child{
+        background: none;
+        padding: 1rem; 
+    }
+    #check:checked ~ ul{
+        left: 0;
+        transition: all 0.25;
+    }
+}

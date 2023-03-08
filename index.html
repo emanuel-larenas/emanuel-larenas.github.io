@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MI CURRICULUM</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+<header class="header">
+    
+        <div class="logo-header">
+        <img src="foto cara.jpg" width="70px" alt="imagen de un hombre">
+      
+
+        </div>
+
+        <nav class="nav-menu">
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+                <i class="menu-icon"><img src="icono.menu.png" alt="foto de menu hamburguesa"></i>
+        </label>
+        <ul>
+            <li><a href="#Inicio"onclick="seleccionar()">Inicio</a></li>
+            <li><a href="#Formacion"onclick="seleccionar()">Formación</a></li>
+            <li><a href="#Mis_Servicios"onclick="seleccionar()">Servicios</a></li>
+            <li><a href="#Contacto"onclick="seleccionar()">Contacto</a></li>
+        </ul>
+        </nav>
+</header>
+
+<section id="Inicio" class="Inicio">
+   <div style="text-align: center;">
+      <img src="foto cara.jpg" width="200px" height="300px" alt="foto de persona masculina"> 
+      <h1>Agustin Montiel</h1>
+      <p id="Datos">Pais: Argentina, Provincia: Buenos Aires</br>
+      Programador Front end</br>
+      Edad: 30 años</p>
+
+</section>
+      
+<section id="Formacion" class="Formacion">
+
+      <h2>Formación Académica</h2>
+      <fieldset>
+
+        <legend><b>Datos Generales</b></legend>
+
+        <ul><li></li>
+        <li>Secundario Completo</li>
+        <li>Bachiller con capacitación laboral Contable Impositiva</li>
+        <li>Inglés Intermedio</li>
+        <li>Autodidacta</li>
+        </ul>
+      </fieldset>
+
+</section>
+
+<section id="Mis_Servicios" class="Mis_Servicios">
+      <h3>Mis Servivios</h3>
+      <fieldset>
+
+        <legend><b>Acepciones</b></legend>
+
+        <ul><li></li>
+        <li>Programador front end</li>
+        <li>Contoles de Datos</li>
+        <li>manejo de html</li>
+        <li>manejo de java scrip</li>
+        <li>manejo paquete de office</li>
+        </ul>
+      </fieldset>
+
+
+</section>
+
+<section id="Contacto" class="Contacto">
+      <h4>Contacto</h4>
+      
+      <form action="https://formsubmit.co/emanuel_larenas@hotmail.com" method="post" class="formulario" onsubmit="return validar () ;"> 
+
+        <label for=" Nombre">Nombre</label>
+        <input id="nombre" type="text" name = name required >
+
+        <label for=" email">Correo Electronico</label>
+        <input id = mail type="email" name = email required>
+
+        <label for=" subjet">Asunto</label>
+        <input id="asunto" type="text" name = subjet required>
+
+        <label for="coments">Comentario</label>
+        <textarea id="comentario" name="coments" cols="15" rows="5"></textarea required>
+        
+        <input id="enviarc" type="submit" value="Enviar"required>
+
+
+      </form>      
+   </div>
+</section>
+
+   <script src="funciones.js"></script>
+  
+</body>
+</html>
+
